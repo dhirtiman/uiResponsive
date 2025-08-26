@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+
+  /* Neutral scale */
+  --color-neutral-50: #121417;
+  --color-neutral-100: #24282F;
+  --color-neutral-200: #363c46;
+  --color-neutral-400: #5a6475;
+  --color-neutral-1000: #e6e7e9; /* <-- custom */
+  --color-neutral-1200: #eeefef; /* <-- custom */
+  --color-neutral-1300: #F1F1F2; /* <-- custom */
+
+  /* Primary scale */
+  --color-primary-400: #582066;
+  --color-primary-900: #f4eff6;
+
+  --color-warning: #E3AD54;
+
+  /* Secondary / Other single tones */
+  --color-secondary: #121417;
+  --color-tertiary: #f4eff6;
+  --color-white: #ffffff;
+
+  /* 🖋 Fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+
+  /* Inter Weights */
+  --font-inter-regular: 400;
+  --font-inter-medium: 500;
+  --font-inter-bold: 700;
+
+  /* Manrope Weights */
+  --font-manrope-medium: 500;
+  --font-manrope-semibold: 600;
+
+  /* 🔠 Font Sizes (from Figma) */
+  --text-xxs: 8.24px;
+  --text-xs: 12px;
+  --text-xs-alt: 12.36px;
+  --text-sm: 12.98px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-lg-alt: 19.47px;
+  --text-xl: 20px;
+  --text-xl-alt: 20.6px;
+  --text-2xl: 32px;
+  --text-2xl-alt: 32.46px;
+  --text-3xl: 40px;
+  --text-4xl: 48px;
+  --text-5xl: 62px;
+}
