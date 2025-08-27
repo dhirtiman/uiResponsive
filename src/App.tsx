@@ -1,10 +1,12 @@
 import './App.css';
 import AnnouncementBar from './components/header/AnnouncementBar';
+import NavBar from './components/header/NavBar';
 
 function App() {
   return (
-    <section className="h-screen w-full border">
+    <section className="h-screen w-full ">
       <AnnouncementBar />
+      <NavBar/>
     </section>
   );
 }

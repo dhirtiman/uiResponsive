@@ -39,7 +39,8 @@ const Button: React.FC<ButtonProps> = ({
 
   // Size-based Tailwind styles
   const sizeClasses = {
-    small: 'py-1 px-2 gap-2 text-sm font-inter-medium ',
+    small:
+      'self-center px-2 w-[104px] h-[24px] gap-2 text-sm font-inter font-medium ',
     medium: 'px-5 py-3 text-[var(--text-md)]',
     large: 'px-6 py-4 text-[var(--text-lg)]',
     'extra-large': 'px-8 py-5 text-[var(--text-xl)]',
@@ -51,7 +52,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`${modeClasses[mode]} ${sizeClasses[size]}  text-neutral-200 rounded-[240px] ${className}`}
+      className={`${modeClasses[mode]} ${sizeClasses[size]} rounded-[240px] text-neutral-200 ${className}`}
     >
       {children}
     </button>
