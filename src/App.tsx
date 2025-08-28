@@ -4,7 +4,7 @@ import NavBar from './components/header/NavBar';
 
 function App() {
   return (
-    <section className="h-screen w-full ">
+    <section className="h-screen w-auto ">
       <AnnouncementBar />
       <NavBar/>
     </section>
