@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
   // Mode-based Tailwind styles
   const modeClasses = {
     default: 'gap-2 font-inter font-medium text-md text-neutral-200',
-    primary: 'bg-primary border text-white hover:bg-purple-800',
+    primary: 'bg-primary-400  text-white ',
     grey: 'bg-neutral-1300 border border-neutral-1000',
     link: 'bg-transparent text-blue-600 underline hover:text-blue-800',
     light: 'bg-white text-gray-900 border border-gray-300 hover:bg-gray-100',
@@ -44,8 +44,9 @@ const Button: React.FC<ButtonProps> = ({
       'self-center px-2 w-[104px] h-[24px] rounded-[240px] gap-2 text-sm font-inter text-neutral-200 font-medium ',
     small:
       'self-center  rounded-lg py-2 px-4 gap-2 text-neutral-200 font-inter font-medium text-md',
-    medium: 'px-5 py-3 text-[var(--text-md)]',
-    large: 'px-6 py-4 text-[var(--text-lg)]',
+    medium: 'px-5  py-3 text-[var(--text-md)]',
+    large:
+      'rounded-lg p-4 gap-2 text-md font-inter text-center font-medium',
     'extra-large': 'px-8 py-5 text-[var(--text-xl)]',
   };
 
@@ -59,10 +60,9 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`${modeClasses[mode]}  flex flex-row ${sizeClasses[size]} items-center cursor-pointer  ${className}`}
+      className={`${modeClasses[mode]}  flex flex-row ${sizeClasses[size]} justify-center cursor-pointer items-center-safe ${className}`}
     >
       {iconImage && icon === 'leading' ? <IconThing /> : null}
-
       {children}
       {iconImage && icon === 'lagging' ? <IconThing /> : null}
     </button>

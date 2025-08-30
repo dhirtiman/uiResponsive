@@ -17,9 +17,21 @@ const NavBar = () => {
     children: React.ReactNode;
     iconImage?: string;
   }) => {
+    const navigate = () => {
+      window.location.href = href;
+    };
+
     return (
       <li className="gap-2 p-2">
-        <Button mode="default" icon="lagging" iconImage={iconImage} className=''>
+        <Button
+          mode="default"
+          icon="lagging"
+          iconImage={iconImage}
+          className=""
+          onClick={() => {
+            navigate();
+          }}
+        >
           {children}
         </Button>
       </li>
@@ -29,7 +41,7 @@ const NavBar = () => {
   return (
     <section className="border-neutral-1000 flex h-auto w-full flex-col gap-2 border-b px-4 py-5 md:w-full md:px-8 lg:w-full">
       {/* container */}
-      <div className="flex w-[343px] flex-row justify-between gap-2 self-center md:w-160 md:px-8 lg:w-full lg:px-20">
+      <div className="flex w-[343px] flex-row justify-between gap-2 md:w-full md:px-8 lg:w-full lg:px-20">
         {/* logo */}
         <div className="flex flex-col gap-2 p-2">
           <div className="flex flex-col gap-2 px-2 py-1">
