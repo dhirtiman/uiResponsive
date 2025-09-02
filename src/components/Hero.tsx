@@ -45,7 +45,7 @@ export default function Hero() {
       </div>
       {/* mesh */}
       <img
-        className="right- absolute top-25 -z-10 h-50 w-[343px] md:-top-1 md:h-[394px] md:w-[538px] lg:top-28 lg:h-115 lg:w-[631px]"
+        className=" object-cover absolute top-25 -z-10 h-50 w-[343px] md:-top-1 md:h-[394px] md:w-[538px] lg:top-28 lg:h-115 lg:w-[631px]"
         src={mesh}
         alt="bg mesh"
       />
