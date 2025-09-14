@@ -1,6 +1,6 @@
-import Button from './ui/Button';
-import rightArrow from '../assets/icons/arrowRight.svg';
-import mesh from '../assets/hero/mesh.svg';
+import Button from '../ui/Button';
+import rightArrow from '../../assets/icons/arrowRight.svg'
+import mesh from '../../assets/hero/mesh.svg';
 
 export default function Hero() {
   return (
